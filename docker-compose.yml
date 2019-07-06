@@ -71,7 +71,7 @@ services:
     environment:
       - GF_SECURITY_ADMIN_PASSWORD=admin
       - GF_DASHBOARD_JSON_ENABLED=true
-      - GF_DASHBOARD_JSON_PATH=/opt/grafana
+      - GF_DASHBOARD_JSON_PATH=/opt/grafana:rw
     volumes:
       - grdata:/var/lib/grafana
 
