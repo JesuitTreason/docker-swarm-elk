@@ -71,9 +71,9 @@ services:
     environment:
       - GF_SECURITY_ADMIN_PASSWORD=admin
       - GF_DASHBOARD_JSON_ENABLED=true
-      - GF_DASHBOARD_JSON_PATH=/opt/grafana:rw
+      - GF_DASHBOARD_JSON_PATH=/opt/grafana
     volumes:
-      - grdata:/var/lib/grafana
+      - grdata:/var/lib/grafana:rw
 
   portainer:
     image: portainer/portainer
