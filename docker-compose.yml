@@ -6,7 +6,7 @@ networks:
 
 volumes:
   esdata:
-  grafana:
+  grdata:
 
 services:
 
@@ -73,7 +73,7 @@ services:
       - GF_DASHBOARD_JSON_ENABLED=true
       - GF_DASHBOARD_JSON_PATH=/opt/grafana
     volumes:
-      - grafana:/var/lib/grafana
+      - grdata:/var/lib/grafana
 
   portainer:
     image: portainer/portainer
